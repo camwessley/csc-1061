@@ -1,0 +1,152 @@
+CSC 1061 PD and Algorithm Assignment
+Cameron Wessley
+5/30/2025
+
+
+1	SDLC, in its original definition and implementation, consists of 7 distinct stages:
+	
+	1 - Planning, requirements, and analysis:
+		This first stage is where a team determines requirements, potential challenges, and limitations for a project. This is the most important phase of the SDLC, as it sets the groundwork and goals of the project.
+	2 - Design:
+		The design stage produces a high-level blueprint of the logic and architecture of a project. It brings ideas from the first stage and produces a tangible representation of the desired product, similar to an architectural drawing or sketch. This stage is important to iron out logical and architectural oversights from the previous stage, and to fine-grain the specifics of how the product will work. This is also the point at which specific languages, frameworks, and technologies to be used in the project will be determined, as well as when UI/UX prototyping takes place in the case of user-facing products.
+	3 - Development:
+		At this point, the team's programmers can begin creating a real prototype of the product based on the design of the product produced in the previous stage. Code quality and optimizations are not a high priority in earlier iterations of development, as the goal is to produce a minimum viable product for evaluation. 
+	4 - Testing:
+		This is where the iterations of development are tested for functionality, performance, usability, and product quality. This stage is crucial to find security vulnerabilities, bugs, and other issues with the product. I personally consider this stage to be more of a cycle of the development and prototyping stages; You build the MVP, you test it, you build a prototype demonstrating improvements, test it, and so on. The testing stage may also emulate a real-world deployment in a testing environment in order to rule out any potential issues with a real deployment.
+	5 - Prototyping:
+		This stage is a bit more ambiguous and can be employed at really any stage of the SDLC. I consider it as more of a tool or practice which should be a part of other stages, especially the later stages. A process known as 'dogfooding', or pushing new features or products to a small, controlled group of users, is one good example of prototyping. This is a great way for the team to receive real-world feedback and monitor the product for any unforseen issues before rolling out to the whole userbase.
+	6 - Deployment:
+		By this point, you should have a pretty well-developed product which has undergone multiple phases of testing, iteration, and deliberation. Deployment is the stage at which the product is rolled out to users. This may be done all at once or gradually to test the product in the real world and allow last-minute fixes to take place before it is globally available.
+	7 - Maintenance:
+		This stage is the maintaining of the product over its lifecycle. This includes updates adding new features, bug fixes, optimizations, refactoring, vulerability mitigations, support for newer technologies, and so on. This stage is a long-term cycle which employs all previous stages when changes are made to the product.
+
+
+2	I feel that the planning stage of the SDLC is the most important, as it is impossible to create a successful product without a very clear plan. Additionally, many projects require a well thought-out plan and proposal in order to receive resources to build the product. I would consider testing to be a close second however, as without testing your product, you cannot perform most or all of the other stages.
+
+
+3	I believe that the least important stage of the SDLC is the maintenance stage. It is very important, but slightly less important than planning, developing a minimum viable product, and deploying it. The product must exist before you can maintain it! I also believe in avoiding premature optimizations and refactoring earlier in the cycle, as these should be low priority and a part of the maintenance stage.
+
+
+4	SDLC stages for making a cake; I am going to assume we are running a very peculiar cake shop which would seem to obsess over details:
+	
+	1 - Plan (lots of questions one should ask themself):
+		Do I need to make a cake? Why should I and what are the benefits of making a cake? In the case of a bakery, it is, simply put, your job. The customers are offering money in exchange for a cake, and you generally need money to survive in a modern society.
+		What kind of cake did the customer order? Do they have any special requests? How soon do they want the cake?
+		What ingredients do I need to make this specific cake? Am I able to meet the customer's cake deadline? Do I have the necessary equipment to make this cake?
+		It seems your customer wants a large, traditional wedding cake, but they aren't quite sure on the details. They know that they want it to be white, with gold-colored accents and decorations, and contain four tiered layers. They want the cake to be completed within a week, which you believe you can do. You checked your storage and have ensured that you have all the necessary ingredients and equipment, and so you agree to make the cake.
+		Once all the requirements are satisfied, you have received the desired ingredients and design of the cake from the customer, and you have ensured you can produce the cake according to the customer's expectations and deadlines, you are ready to move on.
+	
+	2 - Design:
+		Start by drawing up a rough sketch or creating a mockup of the cake you will make. Show the design to the customer so they can see what the cake will look like and so they may change details if desired. This process can repeat until the customer is satisfied with the design. In this case, the customer is not happy with the initial sketch and decides they want candy pearls on the edges of the tiers, and a gold fondant bow on top. You add these to the sketch, and the customer is satisfied with the design.
+	
+	3 - Development:
+		At this point, you are ready to start working on the actual cake. You may create the base layers of the cake first to confirm with the customer that the design is correct and build up ensuring the design is being followed.
+
+	4 / 5 - Testing / Prototyping:
+		By now, you should have a simple cake made, with at least basic details added. Ensure all the desired criteria are met, and either modify the cake or restart if revisions are needed. This stage can repeat, iterating on the prototype until the cake is perfect. The customer has become rather stingy and picky now, and it takes you a week to perfect the design to their liking. You wish they had expressed their concerns earlier in the design process, but at least you did not hand off the cake in an unsatisfactory state and have to start back from stage 2.
+	
+	6 - Deployment:
+		This is when the customer takes the cake you have perfected for them home, and hopefully, you get paid for your hard work. The customer brings the cake to the wedding and everyone gets to try it. The recipe for this specific cake design is now one of many in your arsenal.
+
+	7 - Maintenance:
+		Some weeks go by and the customer you sold the cake to comes back to your bakery, with some ideas for improvements on the cake recipe, and requests a new cake. The cake received generally positive remarks, but a handful of people who ate it complain about it being too dry. You interrogate each of these individuals to find out whether they simply don't appreciate fine baking or the cake actually could be improved. After analyzing the recipe again, you determine that more milk could be used to make the cake moister, and you will try making the cake again with this improvement. You must now go through the cycle again, likely with more brevity than before due to smaller incremental changes.
+
+
+5	How to make a sandwich (for computers):
+
+	# But first, what is a sandwich?
+	sandwich types:
+		ham and cheese:
+			ingredients order:	# bottom to top
+				white bread slice
+				deli ham slice
+				cheddar cheese slice
+				deli ham slice
+				white bread slice
+
+			required tools:
+				plate
+				butter knife
+
+			served hot:		false
+
+		pbj:
+			ingredients order:	# bottom to top
+				white bread slice
+				peanut butter
+				peach preserve spread
+				white bread slice
+
+			required tools:
+				plate
+				butter knife
+
+			served hot:		false
+
+		cheese steak:
+			ingredients order:	# bottom to top
+				hoagie roll
+				steak slice
+				steak slice
+				steak slice
+				cheeze whiz
+
+			required tools:
+				plate
+				butter knife
+				oven
+				oven mit
+
+			served hot:		true
+				cook time:	4min
+				cook temp:	350
+	
+	# Prompt user for the type of sandwich they want
+	let type = 
+	while type not in sandwich types:
+		prompt "What type of sandwich would you like?"
+		type = prompt input
+		if type not in sandwich types:
+			tell user "I do not know how to make a sandwich of that type."
+
+	# Do we have required ingredients?
+	for ingredient in required ingredients of sandwich type:
+		if ingredient not in kitchen:
+			raise error "I do not have the necessary ingredients for this sandwich type."
+
+		else:
+			bring ingredient to workspace
+	
+	# What tools/utensils are needed?
+	for tool in required tools of sandwich type:
+		if tool not in kitchen:
+			raise error "I do not have the necessary tools for this sandwich type."
+
+		else:
+			bring tool to workspace
+
+	# Assemble sandwich
+	let stack = plate
+	for ingredient in ingredient order of sandwich type:
+		stack += ingredient
+	
+	if served hot:
+		set oven to cook temp
+		until oven temp == cook temp:
+			watch tv
+		
+		insert stack into oven
+		let start time = current time
+		until current time == start time + cook time:
+			watch tv
+
+		don oven mit
+		remove stack from oven and put on workspace
+		remove oven mit
+	
+	# Serve sandwich
+	position butter knife over stack
+	for stack size - 1:	# don't cut the plate in half
+		cut downward
+
+	return stack as sandwich

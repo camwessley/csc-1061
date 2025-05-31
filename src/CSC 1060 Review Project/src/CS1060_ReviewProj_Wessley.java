@@ -17,7 +17,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class CS1060_ReviewProj_Wessley {
 
     public static void main(String[] args) {
 
@@ -91,7 +91,7 @@ public class Main {
                     }
                 }
             }
-            // create new Round object from current round's data and append it to our list of rounds
+            // create new Main.Round object from current round's data and append it to our list of rounds
             rounds.add(new Round(playerName, outcome, rolls.toArray(new Roll[0])));
 
             System.out.print("\nDo you want to play again?\n[y/n] > ");
@@ -105,11 +105,108 @@ public class Main {
         input.close(); // close scanner for good practice
 
         for (Round round : rounds) { // for each previous round in round tracker
-            System.out.printf("\nRound #%d [%s] %s:\n", rounds.indexOf(round) + 1, round.getPlayer(), round.getOutcome());
+            System.out.printf("\nMain.Round #%d [%s] %s:\n", rounds.indexOf(round) + 1, round.getPlayer(), round.getOutcome());
             for (Roll r : round.getRolls()) { // for each roll in the round's roll tracker
-                System.out.printf("\tRoll #%d: %s\t= %d\n", rounds.indexOf(round) + 1, r.d1.getValue() + " " + r.d2.getValue(), r.getSum());
+                System.out.printf("\tMain.Roll #%d: %s\t= %d\n", rounds.indexOf(round) + 1, r.d1.getValue() + " " + r.d2.getValue(), r.getSum());
             }
         }
         System.out.printf("\nTotals:\n\tWins: %d\n\tDouble wins: %d\n\tLosses: %d\n", wins, doubleWins, losses);
+    }
+
+    // possible game outcomes
+    public enum GameOutcome {
+        WIN, DOUBLE_WIN, LOSS
+    }
+
+    public static class Roll {
+        final Die d1 = new Die();
+        final Die d2 = new Die();
+        private final int sum;
+
+        public Roll() {
+            sum = d1.value + d2.value;
+        }
+
+        public int getSum() {
+            return this.sum;
+        }
+
+        static class Die {
+
+            // overly verbose but ascii art is fun
+            private final String[] faces = new String[]{"""
+                        ###########
+                        #         #
+                        #    *    #
+                        #         #
+                        ###########
+                        """, """
+                        ###########
+                        # *       #
+                        #         #
+                        #       * #
+                        ###########
+                        """, """
+                        ###########
+                        #       * #
+                        #    *    #
+                        # *       #
+                        ###########
+                        """, """
+                        ###########
+                        # *     * #
+                        #         #
+                        # *     * #
+                        ###########
+                        """, """
+                        ###########
+                        # *     * #
+                        #    *    #
+                        # *     * #
+                        ###########
+                        """, """
+                        ###########
+                        # *     * #
+                        # *     * #
+                        # *     * #
+                        ###########
+                        """};
+            private final int value = (int) (Math.random() * 6) + 1;
+
+            public String getFace() {
+                return this.faces[this.value - 1];
+            }
+
+            public int getValue() {
+                return this.value;
+            }
+        }
+    }
+
+    // i would typically use a record class to store these data but those are probably beyond ch 8
+    // one round of the game contains the player's name, the outcome of that round, and the list of dice rolls in that round
+    public static class Round {
+        private final String player;
+        private final GameOutcome outcome;
+        private final Roll[] rolls;
+
+        // no default constructor because we add the Main.Round to rounds after the round is over
+        public Round(String user, GameOutcome outcome, Roll[] rolls) {
+            this.player = user;
+            this.outcome = outcome;
+            this.rolls = rolls;
+        }
+
+        public String getPlayer() {
+            return this.player;
+        }
+
+        public GameOutcome getOutcome() {
+            return this.outcome;
+        }
+
+        public Roll[] getRolls() {
+            return this.rolls;
+        }
     }
 }
