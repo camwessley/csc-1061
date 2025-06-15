@@ -1,0 +1,63 @@
+Fundamental Concepts of Object Oriented Programming - https://www.youtube.com/watch?v=m_MQYyJpIjg
+
+Abstraction - simplifies reality, focuses only on the data and processes relevant to the application being built
+	Attributes describe an object, also called fields or properties, coded within the class, or as property procedures
+	Operations are actions that can be done to or performed by the object. Known commonly as methods.
+	Distinction: class is the code, and object is the instantiated class in the stack.
+	Property values assigned to an object are collectively known as the state of the object
+	'New' method calls the class' constructor
+
+Encapsulation - data and the programs that manipulate them are bound together and their complexity is hidden
+	Not necessary to understand the inner workings of the class to instantiate it; all you need to know is the name of the class, its properties and methods, and data that need to be supplied when instantiating. This is known as the interface of the class
+
+Inheritance - a class can derive its methods and properties from another class, resulting in a heirarchy of super- and sub-classes
+	a class can extend a class above it; for example, a class Bird may extend class Animal
+	inheritance defines 'type of' relationships
+	class at the start of the inheritance heirarchy is called the 'base class'; any derivative class is called a 'subclass'; any class that is derived from is a 'superclass'
+
+Polymorphism - different subclasses of the same superclass can implement their shared interface in different ways by overriding code of the methods they inherit - literal definition: 'many forms'
+	a subclass can override the workings of a method or property it inherits from a superclass with its own methods and properties
+	different forms of the same type of object with the same interface can behave in different ways
+
+
+Java Classes and Objects - https://www.youtube.com/watch?v=Mm06BuD3PlY https://www.youtube.com/watch?v=IUqKuGNasdM
+
+Classes allow us to define custom data types
+Variables in a class are called instance variables
+
+
+Java Abstract Classes and Methods - https://www.youtube.com/watch?v=HvPlEJ3LHgE
+
+Abstract classes
+	You can't create objects from abstract classes; they cannot be instantiated
+	Abstract classes are useful for defining data to be inherited by a subclass; abstract class 'Animal' is inherited by class 'Bird'. 'Animal' will never need to be instantiated because it is abstract
+	Abstract methods are only declared for inheritance; you don't define any behavior; subclasses will define the implementation of the method
+	Abstract classes enforce and organize what subclasses have to contain
+	Abstract classes can contain actual methods with defined behavior which is inherited by all subclasses
+
+Interfaces
+	Every method in an interface is assumed to be abstract, so 'abstract' keyword is not used
+	Instead of extending an interface like you would with a class, you use 'implements' keyword when instantiating
+
+Differences between interfaces and abstract classes
+	You can implement as many interfaces as you want in Java, but you can only extend one class; you could also extend a class AND implement an interface
+	Any fields declared in an interface will be made static and final and have an assigned value
+	Because every field in an interface is automatically static, the same values in the interface will be inherited by every object in that class
+	You might create an abstract class if you have a lot of closely related classes that you want to have share similar functionality and fields
+	You might create an interface instead if you have a lot of unrelated classes that should all share some common functionality or data
+
+
+Java Encapsulation - https://www.youtube.com/watch?v=eboNNUADeIc
+
+Encapsulation allows contents of a class to be hidden or private, and allow access to those contents through getters and setters
+Attributes should be private if you don't have a reason to make them public or protected
+Private attributes and methods can only be accessed by their parent class
+Contructor can call the class' own setters to instantiate variables
+
+
+Two things I found interesting:
+	First of all, I find the distinct functionality of interfaces and abstract classes to be really interesting. I was not familiar with interfaces until now, but I can see them being very useful for maintaining clean code when a number of classes need to contain the same data. Additionally, the ability to create abstract classes to define intermediary abstract data is very useful to me. I may have a bunch of similar classes which could all have shared data described with one abstract class rather than writing redundant code in each class.
+	Another very interesting thing to me is the relationship between polymorphism and inheritance. Inheritance establishes heirarchies and allows classes to derive properties and behaviors from superclasses, while polymorphism allows objects of derived classes to be treated as objects of their superclass, streamlining the creation of data structures. Through method overriding, subclasses can provide unique implementations of inherited methods. For example, Animal.speak() can be overriden as Dog.speak() to return "Bark!", Cat.speak() to return "Meow!", or Bird.speak() to return "Chirp!". The relationship between inheritance and polymorphism allows us to simplify complex systems and relationships of data through abstraction.
+
+Anonymous objects - https://www.youtube.com/watch?v=DwtPWZn6T1A https://www.youtube.com/watch?v=u_BZlRodfVU:
+	These are objects which are instantiated from a class without being assigned a reference variable and are only used when the object will not need to be referenced later on. You may use an anonymous object when passing a returned value or method as arguments to methods, or otherwise in statements or expressions. In any case, the anonymous object will only exist in the context and duration of that statement or expression. This allows you to create one single object in a class and prevent code from being used outside of the required scope. 

@@ -1,0 +1,33 @@
+Chapter 11 Programming Project (100 points)
+Read Chapter 11 in your book if you have not done so yet.
+(THE PERSON, STUDENT, EMPLOYEE, FACULTY, AND STAFF CLASSES) Design a class named
+Person and its two subclasses named Student and Employee. Make Faculty, Instructor and Staff
+subclasses of Employee. A person has a name, ID number, address, phone number, and e-mail address.
+A student has a class status (freshman, sophomore, junior, or senior). Define the status as a constant. An
+employee has an office, salary, and date hired. Use the MyDate class defined in Programming Exercise
+10.14 to create an object for date hired. A faculty member has office hours and a rank. An instructor has
+a tier rank. A staff member has a title. Override the toString method in each class to display the class
+name and the person’s name.
+
+Write a test program that creates a Person, Student, Advisor, Faculty (full time), Instructor (part
+time), and Staff, and invokes their toString() methods.
+You should be using methods as needed and not using global variables.
+Name your file Chap11PP_yourlastname. Submit your Java file to D2L.
+You will be graded on the following criteria:
+•
+•
+•
+•
+•
+•
+•
+
+Complete comment block at beginning
+Comments throughout code
+Code compiles and runs (failure to compile and compile will be a automatic 50% deduction)
+Code works and produces desired output
+Variables are named by the standards previously provided
+Only concepts from chapters 1 through 12 of your book are used.
+Show use of inheritance and polymorphism (this will need to be done in your test program)
+
+

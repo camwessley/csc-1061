@@ -1,0 +1,75 @@
+CSC 1061 Chapter 10 Assignment
+Cameron Wessley
+6/6/2025
+
+
+1	No, this class is still mutable even with its setter methods removed because its getLoanDate() method returns a reference to the actual Date object, which can be externally modified. This allows the loanDate field to be altered, changing the state of the Loan object.
+
+2	Association describes a relationship between two objects, but does not necessitate ownership. For example, a Boat has a Captain, but a Captain can exist without the Boat, and vice-versa. This is typically implemented by having a member variable in one class which refers to another object.
+
+3	Aggregation describes an ownership relationship between two objects, where the aggregated object may exist independently from the aggregating object, such as how an Employee belongs to a Company, but the Employee can exist without the Company, and vice-versa. Aggregated objects can be added or removed from the aggregating object.
+	Composition is the strongest ownership relationships, where the aggregated object cannot exist without the aggregating object. For example, a Person has a Heart, but the Heart cannot exist without the Person. If the Person is destroyed, its Heart will be destroyed as well.
+
+4	The common relationships among classes are aggregation, association, composition, and inheritance.
+
+5	A stack is a logical LIFO (last-in, first-out) data structure in which the last piece of data to be inserted is the first to be retrieved. A stack is where memory is allocated for processing method invocations.
+
+6	When invoking pop() method on a stack with size 0 will cause an ArrayIndexOutOfBoundsException exception.
+
+7	A primitive-type wrapper class simply wraps a primitive data type in a class so that it can be treated as if it were an object, as well as to allow conversion between types.
+
+8	To convert an integer to a string, use the String.valueOf() or Integer.toString() method on the integer. To convert a numeric integer to a string, use the Integer.valueOf() or Integer.parseInt() method on the string. To convert a double into a string, use the String.valueOf() or Double.toString() method on the double. To convert a numeric string to a double, use the Double.valueOf() or Double.parseDouble() method on the string.
+
+9	Output of the code is as follows:
+		
+		3
+		-1
+
+10	Autoboxing and autounboxing refer to the Java compiler's ability to automatically box primitive values in a context requiring an object, and unbox an object in a ocntext requiring a primitive value, respectively.
+
+11	Output of the code is as follows:
+
+		10
+		10
+		16
+		11
+		11
+		17
+
+12	Results of the expressions:
+		a: true
+		b: false
+		c: true
+		d: true
+		e: true
+		f: "WelcTme tT Java"
+		g: "WelcTme tT Java"
+		h: "WelcTme to Java"
+		i: "Welcome to Java"
+		j:[W, e, l, c, o, m, e,  , t, o,  , J, a, v, a]
+
+13	No String method can change the contents of the string because strings are immutable.
+
+14	An empty string is length 0.
+
+15	You can convert any primitive type to a string using the .toString(var) method of the primitive's wrapper class, or String.valueOf(var) when creating the new String object. For example:
+
+		char hChar = 'H';
+		char[] hCharArr = new char[]{'H', 'e', 'l', 'l', 'o'};
+		double hDouble = 4.20;
+
+		String hString = Character.toString(hChar);
+		String hArrString = String.valueOf(hCharArr);
+		String hDoubleString = Double.toString(hDouble);
+
+		System.out.println(hString);
+		System.out.println(hArrString);
+		System.out.println(hDoubleString);
+
+16	The main difference between StringBuilder and StringBuffer is that StringBuffer is synchronous and thread-safe, while StringBuilder is asynchronous, but not thread-safe. Thus, StringBuffer is better suited for multithreaded use, but slower due to its synchronous nature, while StringBuilder is faster and optimal for singlethreaded use.
+
+17	Three statements to reverse a string 's' using StringBuilder's reverse() method:
+		
+		String s = "Chirp!";
+		StringBuilder sb = new StringBuilder(s);
+		sb.reverse();

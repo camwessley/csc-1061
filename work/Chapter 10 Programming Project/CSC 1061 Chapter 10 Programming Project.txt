@@ -1,0 +1,59 @@
+Chapter 10 Programming Project (80 points)
+Read Chapter 10 in your book if you have not done so yet.
+(IMPLEMENT THE STRING CLASS) The String class is provided in the Java library. Provide your
+own implementation for the following methods (name the new class MyStringAlt):
+•
+•
+•
+•
+•
+•
+•
+
+public MyStringC(char[] chars);
+public char charAt(int index);
+public int length();
+public MyStringC substring(int begin, int end);
+public MyStringC toLowerCase();
+public boolean equals(MyStringC s);
+public static MyStringC valueOf(int i);
+
+Write a test program that shows that all methods work.
+You should be using methods as needed and not using global variables.
+In addition, in a separate file, provide your own implementation for the following methods (name the
+new class MyStringNew):
+•
+•
+•
+•
+•
+•
+
+public MyStringS(String s);
+public int compare(String s);
+public MyStringS substring(int begin);
+public MyStringS toUpperCase();
+public char[] toChars();
+public static MyStringS valueOf(boolean b);
+
+Write a test program that shows that all methods work.
+
+Submit your Java files to D2L (if you used a separate file to for your class, make sure to submit those
+files also).
+You will be graded on the following criteria:
+•
+•
+•
+•
+•
+•
+
+Complete comment block at beginning
+Comments throughout code
+Code compiles and runs (failure to compile and compile will be a automatic 50% deduction)
+Code works and produces desired output
+Variables are named by the standards previously provided
+Only concepts from chapters 1 through 10 of your book are used (using other concepts may
+result in up to a 50% penalty).
+
+

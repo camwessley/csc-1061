@@ -1,0 +1,104 @@
+
+
+
+
+
+
+
+
+CSC 1060 Chapter 12 Homework (50 points)
+
+Read Chapter 12 in your book titled “Exception Handling and Text
+I/O”
+
+Answer the following questions – please make sure to number them to
+match the assignment.  Your only source should be your book.  The page
+numbers might be a bit off because I have the flowable version of your
+book but they should give you an idea.  Each problem is worth 2 points
+unless specified differently in parenthesis.
+
+You may either answer the questions electronically in Word (or
+equivalent) or handwrite answers and scan.  Upload the file to the
+folder in D2L.  Make sure that the file uploaded is in a format that can
+be read (.docx, .pdf, .rtf).
+
+
+
+ 1.	What is an exception in Java?
+
+
+
+ 2.	What are the advantages of using exception handling?
+
+
+
+ 3.	How do you catch an exception?
+
+
+
+ 4.	What is a checked exception and what is an unchecked exception?
+
+
+
+ 5.	(4 points) What are some types of exceptions (at least 3)?
+
+
+
+ 6.	What is meant by “declaring an exception”?
+
+
+
+ 7.	What is meant by “throwing an exception”?
+
+
+
+ 8.	Can you throw multiple exceptions?  Why or why not?
+
+
+
+
+
+ 9.	(5 points) Problem 12.5.1 on about page 471
+
+
+
+ 10.	When should you use exceptions?  
+
+
+
+ 11.	When should you not use exceptions?
+
+
+
+ 12.	(5 points) Problem 12.7.1 on about page 473
+
+
+
+ 13.	(10 points) How do you check whether a file already exists? How do
+you delete a file? How do you rename a file? Can you find the file size
+(the number of bytes) using the File class? How do you create a
+directory?
+
+
+
+ 14.	Can you use the File class for I/O? Does creating a File object
+create a file on the disk?
+
+
+
+ 15.	What will happen if you attempt to create a Scanner for a
+nonexistent file?
+
+
+
+ 16.	What will happen if you attempt to create a PrintWriter for an
+existing file?
+
+
+
+ 17.	Why would you want to write/read to/from a file?
+
+
+
+
+

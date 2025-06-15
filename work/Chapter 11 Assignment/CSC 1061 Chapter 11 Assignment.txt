@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+CSC 1061 Chapter 11 Assignment (50 points)
+
+Read Chapter 11 in your book titled “Inheritance and Polymorphism”
+
+Answer the following questions – Your only source should be your book.
+ Each problem is worth 3 points unless specified differently in
+parenthesis.  Assume all code snippits are correct unless otherwise
+specified.
+
+You may either answer the questions electronically in Word (or
+equivalent) or handwrite answers and scan.  Make sure that your problems
+are numbered the same as this document!  Upload the file to the folder
+in D2L.  Make sure that the file uploaded is in a format that can be
+read (.docx, .pdf, .rtf).
+
+
+
+ 1.	What is a subclass in Java?  What keyword do you use to define a
+subclass?
+
+
+
+ 2.	What is a superclass in Java?
+
+
+
+ 3.	What is single inheritance? What is multiple inheritance? Does Java
+support multiple inheritance?
+
+
+
+ 4.	How does a subclass invoke its superclass’s constructor?
+
+
+
+ 5.	What is meant by method overriding?
+
+
+
+ 6.	(8 points) Do some research outside of your book on operator
+overloading and answer the following (make sure to include the source
+where you get your information):
+
+
+
+ a.	What is operator overloading?
+
+ b.	Does Java support operator overloading?  Why or why not?
+
+
+
+ 7.	Explain the difference between method overloading and method
+overriding.
+
+
+
+ 8.	What is the benefit of using the @Override annotation?
+
+
+
+ 9.	What are the three pillars of object-oriented programming? What is
+polymorphism?
+
+
+
+ 10.	What is dynamic binding? 
+
+
+
+ 11.	Describe the difference between method matching and method binding.
+
+
+
+ 12.	What is meant by casting objects?
+
+
+
+ 13.	(6 points) Problem 11.9.3 on about page 432
+
+
+
+ 14.	What is polymorphism?  When would you use it?
+
+
+
+
+

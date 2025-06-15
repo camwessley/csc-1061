@@ -1,0 +1,74 @@
+Program Development and Algorithm Assignment
+Many students think that programming is just sitting down and writing code to make your
+computer do something. There is much more involved that just writing code.
+The following video is on one interpretation of what coding is: What is Programming video
+In reality, programming involved much more than just writing code. Programs should be written
+with thorough consideration of the Software Development Life Cycle (SDLC). Section 2.17 in
+your book introduces it. The following video provides an introduction to what SDLC is:
+Software Development Life Cycle Explained
+Here is a short video to talk about the difference between programming and coding:
+Programming vs Coding
+Watch the 3 videos above. Then answer the following questions (in your own words):
+1.
+2.
+3.
+4.
+
+What are the 7 stages of SDLC and why is each phase important?
+Which stage do you think is the most important? Why?
+Which stage do you think is the least important? Why?
+You decide that you are going to bake a cake. Go through each of the 7 stages and use
+those to figure out what kind of cake you are going to make and how to accomplish it.
+Be very specific for each stage as to what would need to be done.
+
+Computers are not smart – they do what they are told to do. So, you have to be very precise in
+telling them what to do. This often includes going through the first four stages of SDLC before
+ever programming. However, sometimes getting to the coding stage can be done by creating
+algorithms to write the code from. Please look at the following items:
+•
+•
+•
+
+What is an algorithm article
+What is an algorithm video
+For fun - Big Bang Theory Friendship Algorithm
+
+Now, based on the information from these, create an algorithm to make your favorite sandwich.
+Your algorithm must be detailed enough that anyone that can read, can follow your algorithm
+exactly as it is written to produce your favorite sandwich.
+This is not considered a good algorithm:
+1.
+2.
+3.
+4.
+5.
+6.
+
+Get a piece of bread
+Spread peanut butter on it
+Get another piece of bread
+Spread jelly on it
+Put the two pieces of bread together
+Eat it!
+
+Your algorithm should start with what type of sandwich it is, what ingredients are needed; what
+other equipment is needed (knife, pan, etc), precise steps on how to make the sandwich (similar
+to a recipe), and everyone following the steps should get the same result. I have seen the
+directions for making a peanut butter and jelly sandwich up to 8 pages typed – that person got an
+A.
+Your answers should be typed in a file in a format that is readable to your instructor - Word
+document, .rtf file, .pdf file (not PAGES).
+The following will be the components you will be graded on:
+Criteria
+Questions 1 through 3 – 8 points each
+Question 4 (5 points for each stage)
+Algorithm
+Total Points
+
+Points
+24
+35
+41
+100
+
+

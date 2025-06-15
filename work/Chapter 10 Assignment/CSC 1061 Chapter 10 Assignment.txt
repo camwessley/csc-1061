@@ -1,0 +1,40 @@
+CSC 1061 Chapter 10 Assignment (50 points)
+Read Chapter 10 in your book titled “Object-Oriented Thinking”
+Answer the following questions – please make sure to number them to match your book.
+Your only source should be your book. The page numbers might be a bit off because I have
+the flowable version of your book but they should give you an idea. Each problem is worth
+2.5 points unless specified differently in parenthesis. Assume all code snippits are correct
+unless otherwise specified.
+You may either answer the questions electronically in Word (or equivalent) or handwrite
+answers and scan. Make sure that your problems are numbered the same as this document!
+Upload the file to the folder in D2L. Make sure that the file uploaded is in a format that can
+be read (.docx, .pdf, .rtf).
+1. If you redefine the Loan class in Listing 10.2 (page 370 in your book) without setter
+methods, is the class immutable? Why or why not?
+
+2. What is meant by association?
+3. What is aggregation? What is composition?
+4. What are common relationships among classes?
+5. What is a stack?
+6. What happens when invoking the pop() method on a stack while size is 0?
+7. Describe primitive-type wrapper classes.
+8. (4 points) How do you convert an integer into a string? How do you convert a numeric
+string into an integer? How do you convert a double number into a string? How do you
+convert a numeric string into a double value?
+9. Show the output of the following code:
+
+10. What are autoboxing and autounboxing?
+
+11. What is the output of the following code?
+
+12. (5 points). Suppose s1, s2, s3, and s4 are four strings, given as follows (this is a picture so
+please answer below):
+
+13. Does any method in the String class change the contents of the string?
+14. Suppose string s is created using new String(); what is s.length()?
+15. How do you convert a char, an array of characters, or a number to a string?
+16. What is the difference between StringBuilder and StringBuffer?
+17. (6 points) Write three statements to reverse a string s using the reverse method in the
+StringBuilder class.
+
+

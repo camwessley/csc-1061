@@ -1,0 +1,65 @@
+CSC 1061 Chapter 9 Assignment
+Cameron Wessley
+6/5/2025
+
+
+1	Object-oriented programming (OOP) is a tool for developing reusable code, which organizes data structures and relevant logic into objects.
+
+2	An object in OOP is any thing which can be named and described logically. The data within an object define the object and its behavior.
+
+3	Classes are a blueprint for objects of the same type. Objects are instantiated from classes, which is the creation of an object from its class.
+
+4	Constructors are a special method in a class which defines how to instantiate an object from the class. They must be named the same as the class, have no return type, and are invoked using the 'new' operator on the class.
+
+5	An object is an instance of a class, and the object's type will be of its class. A class defines an object, but not vice-versa.
+
+6	You may declare an object's reference variable when instantiating it from a class by declaring a variable of the type of the class using the 'new' operator to run the class' constructor. Ex:
+
+		Fish fish0 = new Fish('Albert', 'cutthroat trout');
+
+	'fish0' is a reference variable which points to the memory address of this 'Fish' object, which was instantiated from the 'Fish' class using its constructor, which expects positional arguments for the name and species of the fish, respectively.
+
+7	Use the 'new' operator on a class to invoke its constructor; see #6 or #11.
+
+8	A method is just a piece of code which defines behavior. A constructor is a special kind of method which tells Java how to instantiate an object from its class. A constructor may take arguments to specify how the object is defined, but a constructor without arguments may be defined as well. This is known as a 'default' or 'no-arg' constructor, because it defines the default behavior when no arguments are supplied.
+
+9	An array is an object containing a list of references to objects or primitives of the same type. When an array is initialized, the default value for each element will be '0' for numeric primitives, 'false' for booleans, or 'null' for objects.
+
+10	The dot (.) operator, or object member access operator, is used to access member data fields or methods from an object, such as 'circle0.radius'.
+
+11	An anonymous object is one created with no reference variable, typically used when passing a value from an object which only needs to be used once, or for objects which do not need to be accessed later on.
+
+12	You can create a 'Date' object for the current time and display it by creating a new 'Date' object using its default constructor and assigning it a reference variable. You can access the time the object was created by invoking one of its accessor methods using the dot operator. Ex:
+		
+		import java.util.Date;
+
+		public class Main {
+			public static void main(String[] args) {
+				Date currentDate = new Date();
+				System.out.printf("The current Unix timestamp is %d milliseconds", currentDate.getTime());
+			}
+		}
+
+13	To create a Point2D object, call its constructor using the 'new' operator and supply its required x and y arguments. You can obtain the distance between two points by calling one point's 'distance' method, passing the other Point2D object as an argument. You can calculate the midpoint between two points by calling a point's midpoint method, passing the other Point2D object as an argument. Contrary to what the textbook says however, as far as I can tell from reading documentation, neither javafx.geometry.Point2D, nor java.awt.geom.Point2D provide a midpoint() method. Thus, in the real world, you must use the midpoint formula to find the distance between the two points.
+
+14	An accessor method allows controlled reading of private data fields in an object, and a mutator method allows controlled modifying of private data fields in an object. These are more commonly known as getter and setter methods, respectively. Getter methods will be of a specific return type and setter methods will be of type void.
+
+15	The code outputs the following:
+		
+		false
+
+16	Data field encapsulation allows the programmer to make a class' data fields private to protect them from direct access or modification. This enforces clean and safe class design.
+
+17	A class with all private data fields and no mutators may still be mutable if it contains accessor methods which return a reference to a mutable instance data field.
+
+18	Because Java primitives are immutable, a class containing only private data fields of primitive types with no setter methods is considered immutable.
+
+19	The code outputs the following:
+		
+		i + j is 23
+		k is 2
+		j is 0
+
+	i and j are not added together in the output because they are being concatenated to a string, so they are appended instead of added.
+
+20	The 'this' keyword is a reference to the object in which it is called, and is often used inside a constructor to invoke another constructor of the same class or to explicitly distinguish instance variables from local variables. It can access any method or datum of the object to which it refers using the dot operator.

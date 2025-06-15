@@ -1,0 +1,97 @@
+CSC 1061 Chapter 11 Assignment
+Cameron Wessley
+6/13/2025
+
+
+1	A subclass, or child class, is a special class which is derived from a superclass, or parent class. The subclass extends the superclass ('extends' keyword), inheriting properties and methods from its superclass, and allows adding or overriding features of the superclass.
+
+2	A superclass is a general class, from which subclasses derive common properties and behaviors through inheritance using the 'extends' keyword
+
+3	Inheritance Types:
+
+	-	Single inheritence dictates that classes can only inherit from one superclass. Java supports this via the 'extends' keyword.
+	-	Multiple inheritence allows for inheriting from multiple superclasses, which is not supported by Java; similar functionality can be achieved using interfaces.
+
+4	A subclass can invoke its superclass' constructor by invoking 'super()' or 'super(arguments)' in the first statement of the subclass constructor, ensuring the superclass is initialized before the subclass performs its tasks.
+
+5	Method overriding allows to provide a new implementation of a method in a subclass which is already defined in the superclass, using the same signature and return type.
+
+6	Operator Overloading:
+
+	a	Operator overloading is a special case of polymorphism which allows assigning custom implementations to operators for user-defined types. For example, in C++, you can define '+' to concatenate arbitrary objects rather than add them as numbers, such as with strings.
+	b	Java omits support for operator overloading for user-defined types; JVM developers avoided it to prevent ambiguity, reduce complexity, and enhance maintainability of a codebase.
+		
+	>	https://www.oracle.com/java/technologies/simple-familiar.html#4098
+	>	https://isocpp.org/wiki/faq/operator-overloading#op-ov-benefits
+
+7	Method overloading allows you to define multiple methods with the same name in the same class or across inheritance, but with different arguments (different interface, same implementation). Method overriding allows reimplementing a method in a superclass without changing its interface.
+	
+	Example of overloading:
+		
+		int addTwo(int a, int b) {
+			return a + b;
+		}
+		
+		int addTwo(double a, double b) {
+			return a + b;
+		}
+
+	Example of overriding:
+		
+		class Animal {
+			void speak(String sound) {
+				System.out.println("The animal says " + sound);
+			}
+		}
+
+		class Bird extends Animal {
+			
+			// override annotation isn't strictly necessary, but makes it much clearer to a reader or the compiler that you are overriding
+			@Override
+			void speak(String sound) {
+				System.out.println("The bird says " + sound);
+			}
+		}
+
+8	The @Override annotation indicates that a method is intended to override a method in its superclass. If the method does not correctly override a superclass method, the compiler will report an error.
+
+9	The three pillars of OOP are encapsulation, inheritance, and polymorphism. Polymorphism is principle by which a reference variable of a supertype can refer to an object of a subtype.
+
+10	Dynamic binding is the process by which the JVM decides which implementation of a method to invoke at runtime.
+
+11	Method matching is performed at compile-time based on the declared type of the reference variable. This is when the compiler determines the appropriate signature for the method call. Method binding occurs at runtime and determines which implementation of the method to invoke based on the type of the object.
+
+12	Casting an object refers to converting a reference variable to a different type to access specific methods or data fields. For example:
+		
+		public class Device {
+			public void reboot() {}
+		}
+
+		public class Tablet extends Device {
+			public void reboot() {}
+			public void switchNetwork() {}
+		}
+
+		// implicit (upcasting)
+		Device mobileDevice = new Tablet()
+
+		// explicit (downcasting)
+		Tablet castMobileDevice = (Tablet)mobileDevice
+
+13	Problem 11.9.3 from textbook:
+		
+		a	True
+		b	False
+		c	True
+		d	True
+		e	False
+		f	True
+		g	True
+		h	False
+		i	False; False
+		j	True; False
+		k	False
+		l	False
+		m	True
+
+14	Polymorphism means that a variable of a supertype can refer to a subtype object. It can be used to write reusable code which allows a single method to operate in various ways, depending on the type of object it is applied to.

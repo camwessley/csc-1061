@@ -1,0 +1,60 @@
+Chapter 9 Programming Project (80 points)
+Read Chapter 9 in your book if you have not done so yet.
+Design a class named Linear_Equation for a 2 X 2 system of linear equations:
+
+The class contains:
+•
+•
+•
+•
+•
+•
+
+Private data fields a, b, c, d, e, and f.
+A constructor with the arguments for a, b, c, d, e, and f.
+Six getter methods for a, b, c, d, e, and f.
+A method named NotSolvable() that returns true if 𝑎𝑑 − 𝑏𝑐 is 0.
+Methods getX() and getY() that return the solution for the equation.
+A method named GetDeterminant() that returns 𝑎𝑑 − 𝑏𝑐
+
+Write a test program that prompts the user to enter a, b, c, d, e, and f and displays the result as well as
+the determinant. If 𝑎𝑑 − 𝑏𝑐 is 0, report that “The equation has no solution.”
+You should be using methods as needed and not using global variables.
+Name your file Chap9_PP_yourlastname. Submit your Java file (only) to D2L.
+You will be graded on the following criteria:
+•
+•
+•
+•
+•
+•
+•
+
+Complete comment block at beginning
+Comments throughout code
+Code compiles and runs (failure to compile and compile will be a automatic 50% deduction)
+Code works and produces desired output
+Variables are named by the standards previously provided (chapter 2)
+A class created meeting the guidelines provided
+Only concepts from chapters 1 through 9 of your book are used (use of concepts outside these
+chapters may result in up to a 50% deduction).
+
+Programming / Coding Standards:
+•
+
+•
+
+As you write your code, use indenting (as appropriate), add white space to make code readable
+and add comments. Your comments will include preamble (or comment block) and throughout
+your code to explain what is happening.
+At the very beginning of every program file, you’ll need to add the following data as comments.
+(Also known as metadata – data about data.)
+//Name: <your name here>
+//Date: <date finished>
+//Program: <assignment name>
+//Program Description: <what does this program do – this may be one line or an entire
+paragraph depending on the complexity of your program>
+//Inputs: < what are the inputs to this program>
+//Outputs: <what does this program produce>
+
+

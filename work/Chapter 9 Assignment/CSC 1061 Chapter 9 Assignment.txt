@@ -1,0 +1,41 @@
+CSC 1061 Chapter 9 Assignment (50 points)
+Read Chapter 9 in your book titled “Objects and Classes”
+Answer the following questions – please make sure to number them to match your book. Your
+only source should be your book. The page numbers might be a bit off because I have the
+flowable version of your book but they should give you an idea. Each problem is worth 2.5
+points. Assume all code snippits are correct unless otherwise specified.
+You may either answer the questions electronically in Word (or equivalent) or handwrite answers
+and scan. Make sure that your problems are numbered the same as this document! Upload the
+file to the folder in D2L. Make sure that the file uploaded is in a format that can be read (.docx,
+.pdf, .rtf).
+1. What is object-oriented programming?
+2. What is an object in OOP?
+3. What is a class? What is an instantiation?
+4. What is a constructor?
+5. Describe the relationship between an object and its defining class.
+6. How do you declare an object’s reference variable?
+7. How do you create an object?
+8. What are the differences between constructors and methods? When will a class have a
+default constructor?
+9. Is an array an object or a primitive-type value? Can an array contain elements of an
+object type? Describe the default value for the elements of an array.
+10. Which operator is used to access a data field or invoke a method from an object?
+11. What is an anonymous object?
+12. How do you create a Date for the current time? How do you display the current time?
+13. How do you create a Point2D? Suppose p1 and p2 are two instances of Point2D, how do
+you obtain the distance between the two points? How do you obtain the midpoint
+between the two points?
+14. What is an accessor method? What is a mutator method? What are the naming
+conventions for accessor methods and mutator methods?
+
+15. What is the output of the following code?
+
+16. What are the benefits of data field encapsulation?
+17. If a class contains only private data fields and no setter methods, is the class immutable?
+18. If all the data fields in a class are private and of primitive types, and the class doesn’t
+contain any setter methods, is the class immutable?
+19. What is the output of the following program?
+
+20. Describe the role of the this keyword.
+
+
